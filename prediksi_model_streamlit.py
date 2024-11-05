@@ -4,7 +4,8 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import MinMaxScaler
 
 # Load dataset and build model
-data = pd.read_csv("C:/Users/Dar/Downloads/Permasalahan_Institusi_Pendidikan_Dicoding/data.csv", sep=';')
+data_path = "https://raw.githubusercontent.com/daruadiyatma/tes_data/refs/heads/main/data.csv"
+data = pd.read_csv(data_path, sep=';')
 
 scaler = MinMaxScaler()
 numerical_columns = ['Unemployment_rate', 'Inflation_rate', 'Curricular_units_2nd_sem_grade', 'Curricular_units_1st_sem_grade', 'GDP']  
